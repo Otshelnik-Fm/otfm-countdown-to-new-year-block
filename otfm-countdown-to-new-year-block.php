@@ -4,7 +4,7 @@
 Plugin Name:    OtFm Countdown to New Year block
 Plugin URI:     https://wordpress.org/plugins/otfm-countdown-to-new-year-block/
 Description:    For new block editor (Gutenberg) countdown to new year. Block for WordPress
-Version:        1.0.0
+Version:        1.0.1
 Author:         Otshelnik-Fm (Wladimir Druzhaev)
 Author URI:     https://otshelnik-fm.ru/
 Text Domain:    otfm-countdown-to-new-year-block
@@ -62,28 +62,40 @@ function octny_script(){
 
     /**
      *  TODO: experiment translation in service wp translate
+     *  upd. dont work in 5.0.1
      */
     //wp_set_script_translations( 'octny_script', 'otfm-countdown-to-new-year-block' );
 }
 add_action('init', 'octny_script');
 
 
-// add script on frontend
+// add script on frontend & backend
 function octny_countdown_script(){
     wp_enqueue_script(
             'octny_count',
             plugins_url('dist/countdown.js', __FILE__),
-            array( 'wp-blocks', 'jquery' ),
+            array( 'wp-blocks', 'jquery', 'wp-i18n' ),
             '',
             true
     );
 
+    // create jed
+    $locale  = octny_get_jed_locale_data( 'otfm-countdown-to-new-year-block' );
+
+    // add in object JS wp.i18n.setLocaleData.
+    $content = 'wp.i18n.setLocaleData(' . json_encode( $locale ) . ', "otfm-countdown-to-new-year-block" );';
+
+    // before script inline
+    wp_script_add_data( 'octny_count', 'data', $content );  // countdown translate
+    wp_script_add_data( 'octny_script', 'data', $content ); // block translate
+
     /**
      *  TODO: experiment translation in service wp translate
+     *  upd. dont work in 5.0.1
      */
-    //if ( function_exists( 'wp_set_script_translations' ) ) {
-    //    wp_set_script_translations( 'octny_count', 'otfm-countdown-to-new-year-block' );
-    //}
+//    if ( function_exists( 'wp_set_script_translations' ) ) {
+//        wp_set_script_translations( 'octny_count', 'otfm-countdown-to-new-year-block' );
+//    }
 }
 add_action( 'enqueue_block_assets', 'octny_countdown_script' );
 
@@ -98,11 +110,30 @@ function octny_countdown_style(){
 add_action( 'enqueue_block_assets', 'octny_countdown_style' );
 
 
-/**
- *  TODO: experiment translation in service wp translate
- */
+
 // languages
 function octny_textdomain() {
     load_plugin_textdomain( 'otfm-countdown-to-new-year-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
-//add_action( 'plugins_loaded', 'octny_textdomain' );
+add_action( 'plugins_loaded', 'octny_textdomain' );
+
+
+// in gutenberg original function gutenberg_get_jed_locale_data
+// this is alternative for WP 5.0
+function octny_get_jed_locale_data( $domain ) {
+    $translations = get_translations_for_domain( $domain );
+    $locale = array(
+            '' => array(
+                    'domain' => $domain,
+                    'lang'   => is_admin() ? get_user_locale() : get_locale(),
+            ),
+    );
+    if ( ! empty( $translations->headers['Plural-Forms'] ) ) {
+        $locale['']['plural_forms'] = $translations->headers['Plural-Forms'];
+    }
+    foreach ( $translations->entries as $msgid => $entry ) {
+        $locale[ $msgid ] = $entry->translations;
+    }
+
+    return $locale;
+}

@@ -39,6 +39,13 @@ Write me Otshelnik-Fm@yandex.ru
 
 
 ## Changelog  
+**2018-12-15**  
+v1.0.1  
+* fix translation  
+* full js translation  
+* width->minWidth column fix  
+
+
 **2018-12-14**  
 v1.0.0  
 * Release  

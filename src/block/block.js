@@ -34,7 +34,7 @@
   // 1. General settings
         icon        : iconCountdown,                                        // add svg icon
         title       : __( 'OtFm Countdown to New Year', 'otfm-countdown-to-new-year-block' ),
-        description : __( 'Happy New Year.', 'otfm-countdown-to-new-year-block' ),
+        description : __( 'Happy New Year!', 'otfm-countdown-to-new-year-block' ),
         category    : 'common',                                             // category of the block.
 
         supports:{
@@ -112,7 +112,7 @@
                             "div",
                             null,
                             el(RangeControl, {
-                                label: "Column width",
+                                label: __( 'Column width', 'otfm-countdown-to-new-year-block' ),
                                 value: attributes.widthCol,
                                 min: 80,
                                 max: 300,
@@ -153,7 +153,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -171,7 +171,7 @@
                                     el(
                                         "div",
                                         { id: "octny_days_text", className: "octny_text" },
-                                        "days"
+                                        __( 'days', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -180,7 +180,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -198,7 +198,7 @@
                                     el(
                                         "div",
                                         { id: "octny_hours_text", className: "octny_text" },
-                                        "hours"
+                                        __( 'hours', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -207,7 +207,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -225,7 +225,7 @@
                                     el(
                                         "div",
                                         { id: "octny_mins_text", className: "octny_text" },
-                                        "minutes"
+                                        __( 'minutes', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -234,7 +234,7 @@
                                 { 
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -252,7 +252,7 @@
                                     el(
                                         "div",
                                         { id: "octny_secs_text", className: "octny_text" },
-                                        "seconds"
+                                        __( 'seconds', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             )
@@ -302,7 +302,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -320,7 +320,7 @@
                                     el(
                                         "div",
                                         { id: "octny_days_text", className: "octny_text" },
-                                        "days"
+                                        __( 'days', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -329,7 +329,7 @@
                                 {
                                    className: "octny_col",
                                    style: {
-                                       width: widthCol
+                                       minWidth: widthCol
                                    }
                                 },
                                 el(
@@ -347,7 +347,7 @@
                                     el(
                                         "div",
                                         { id: "octny_hours_text", className: "octny_text" },
-                                        "hours"
+                                        __( 'hours', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -356,7 +356,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -374,7 +374,7 @@
                                     el(
                                         "div",
                                         { id: "octny_mins_text", className: "octny_text" },
-                                        "minutes"
+                                        __( 'minutes', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             ),
@@ -383,7 +383,7 @@
                                 {
                                     className: "octny_col",
                                     style: {
-                                        width: widthCol
+                                        minWidth: widthCol
                                     }
                                 },
                                 el(
@@ -401,7 +401,7 @@
                                     el(
                                         "div",
                                         { id: "octny_secs_text", className: "octny_text" },
-                                        "seconds"
+                                        __( 'seconds', 'otfm-countdown-to-new-year-block' )
                                     )
                                 )
                             )

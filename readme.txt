@@ -6,7 +6,7 @@ Tags: gutenberg, blocks, gutenberg blocks, countdown, new-year
 Requires at least: 5.0.1
 Tested up to: 5.0.1
 Requires PHP: 5.6.36
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,6 +50,13 @@ Write me Otshelnik-Fm@yandex.ru
 
 
 == Changelog ==
+= 2018-12-15 =
+v1.0.1    
+* fix translation
+* full js translation
+* width->minWidth column fix
+
+
 = 2018-12-14 =
 v1.0.0    
 * Release
