@@ -1,0 +1,33 @@
+.octny_wrapper {
+    -webkit-animation: fadeInOtfm .5s linear .9s forwards;
+            animation: fadeInOtfm .5s linear .9s forwards;
+}
+.octny_header_title {
+    font-size: 20px;
+    margin: 5px 10px;
+}
+.octny_container {
+    background-color: #dd4848;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: normal;
+    padding: 10px 3px 4px;
+}
+.octny_col {
+    align-items: center;
+    background: repeating-linear-gradient(55deg, rgba(221, 72, 72, 0.1),
+                                                 rgba(221, 72, 72, 0.1) 5px,
+                                                 rgba(255, 255, 255, 0.2) 5px,
+                                                 rgba(255, 255, 255, 0.2) 10px);
+    border: 3px solid #fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0 3px 6px;
+    min-width: 80px;
+    padding: 8px;
+}
+@-webkit-keyframes fadeInOtfm{0%{opacity:0}to{opacity:1}}
+@keyframes         fadeInOtfm{0%{opacity:0}to{opacity:1}}
