@@ -35,6 +35,15 @@ Check out all beauty and power of the plugin by watching this video:
 PHP 5.6+, 7, 7.1 or 7.2 recommended for better performance, WordPress 5.0.1
 
 
+= Translation =
+
+Available in English, Russian, Ukrainian and more other languages in becoming.
+
+
+= Acknowledgements =
+Thanks to [BArS](https://profiles.wordpress.org/bars/) for Ukrainian translation approval.
+
+
 == Frequently Asked Questions ==
 
 = What WordPress themes work with OtFm Countdown to New Year block? =
