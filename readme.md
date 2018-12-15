@@ -8,6 +8,8 @@ Select from several backgrounds and width column timer
 
 See screens & download in official repository WordPress: [link](https://wordpress.org/plugins/otfm-countdown-to-new-year-block/)  
 
+Check out all beauty and power of the plugin by watching this video:  
+[![See video](https://img.youtube.com/vi/v0p0hb0C_Is/0.jpg)](https://www.youtube.com/watch?v=v0p0hb0C_Is "See video")  
 
 ## Installation  
 

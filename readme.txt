@@ -20,6 +20,9 @@ The plugin adds in the block editor countdown to New Year.  Showing days, hours,
 
 Select from several backgrounds and width column timer
 
+Check out all beauty and power of the plugin by watching this video:
+[youtube https://www.youtube.com/watch?v=v0p0hb0C_Is]
+
 == Installation ==
 
 1. Install `OtFm Countdown to New Year block` plugin either via the WordPress plugin directory, or upload the `otfm-countdown-to-new-year-block` folder to your `/wp-content/plugins/` directory, or alternatively upload the otfm-countdown-to-new-year-block.zip file via the plugin page of WordPress by clicking 'Add New' and selecting the zip from your computer.
