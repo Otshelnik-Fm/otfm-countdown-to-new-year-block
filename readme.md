@@ -20,12 +20,12 @@ Check out all beauty and power of the plugin by watching this video:
 
 ## Requirements  
 
-PHP 5.6+, 7, 7.1 or 7.2 recommended for better performance, WordPress 5.0.1  
+PHP 7, 7.1, 7.2 or 7.3 recommended for better performance, WordPress 5.2.4   
 
 
 ## Translation  
 
-Available in English, Russian, Ukrainian and more other languages in becoming.  
+Available in English, Russian, Ukrainian, French (France)(50%) and more other languages in becoming.  
 
 
 ## Acknowledgements  
@@ -50,6 +50,12 @@ Write me Otshelnik-Fm@yandex.ru
 
 
 ## Changelog  
+**2019-10-31**  
+v1.0.2  
+* codestyle  
+* check in WordPress 5.2.4  
+
+
 **2018-12-15**  
 v1.0.1  
 * fix translation  
