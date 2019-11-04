@@ -1,7 +1,9 @@
 ## Description  
 
-WordPress 5.0 introduces a block-based editor (codename "Gutenberg") that offers a streamlined editing experience.  
+WordPress 5.0 introduces a block-based editor (codename "Gutenberg" and gutenberg blocks) that offers a streamlined editing experience.  
 The plugin adds in the block editor countdown to New Year. Showing days, hours, minutes and seconds until New Year day.  
+
+Waiting for the holiday? New year will not pass you by with this block-counter.
 
 Select from several backgrounds and width column timer  
 
@@ -25,11 +27,15 @@ PHP 7, 7.1, 7.2 or 7.3 recommended for better performance, WordPress 5.2.4
 
 ## Translation  
 
-Available in English, Russian, Ukrainian, French (France)(50%) and more other languages in becoming.  
+Available in English, Russian, Ukrainian, French (France), Italian and more other languages in becoming.  
 
 
 ## Acknowledgements  
 Thanks to [BArS](https://profiles.wordpress.org/bars/) for Ukrainian translation approval.  
+
+Thanks to [fxbenard](https://profiles.wordpress.org/fxbenard/), [wrey75](https://profiles.wordpress.org/wrey75/), [Didier Wolforg](https://profiles.wordpress.org/wolforg/) for the translation and approval of the translation into French (France).  
+
+Thanks to [Wolly aka Paolo Valenti](https://profiles.wordpress.org/wolly/) for Italian translation approval.  
 
 
 ## Frequently Asked Questions  
