@@ -22,12 +22,12 @@ Check out all beauty and power of the plugin by watching this video:
 
 ## Requirements  
 
-PHP 7, 7.1, 7.2 or 7.3 recommended for better performance, WordPress 5.2.4   
+PHP 7.1, 7.2, 7.3 or 7.4 recommended for better performance, WordPress 5.5.3  
 
 
 ## Translation  
 
-Available in English, Russian, Ukrainian, French (France), Italian and more other languages in becoming.  
+Available in English, Russian, Ukrainian, French (France), Italian, Spanish and more other languages in becoming.    
 
 
 ## Acknowledgements  
@@ -36,6 +36,8 @@ Thanks to [BArS](https://profiles.wordpress.org/bars/) for Ukrainian translation
 Thanks to [fxbenard](https://profiles.wordpress.org/fxbenard/), [wrey75](https://profiles.wordpress.org/wrey75/), [Didier Wolforg](https://profiles.wordpress.org/wolforg/) for the translation and approval of the translation into French (France).  
 
 Thanks to [Wolly aka Paolo Valenti](https://profiles.wordpress.org/wolly/) for Italian translation approval.  
+
+Thanks to [Yordan Soares](https://profiles.wordpress.org/yordansoares/), [Fernando Tellado](https://profiles.wordpress.org/fernandot/) for Spanish (Spain) (and Spanish (Mexico), Spanish (Venezuela)) translations.
 
 
 ## Frequently Asked Questions  
@@ -56,6 +58,11 @@ Write me Otshelnik-Fm@yandex.ru
 
 
 ## Changelog  
+**2020-12-01**  
+v1.0.3  
+* Checking in work in WordPress 5.5.3  
+
+
 **2019-10-31**  
 v1.0.2  
 * codestyle  

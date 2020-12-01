@@ -4,7 +4,7 @@
   Plugin Name:    OtFm Countdown to New Year block
   Plugin URI:     https://wordpress.org/plugins/otfm-countdown-to-new-year-block/
   Description:    For new block editor (Gutenberg) countdown to new year. Block for WordPress
-  Version:        1.0.2
+  Version:        1.0.3
   Author:         Otshelnik-Fm (Wladimir Druzhaev)
   Author URI:     https://otshelnik-fm.ru/
   Text Domain:    otfm-countdown-to-new-year-block
